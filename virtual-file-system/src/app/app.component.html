@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+  {{ title }}!
+  </h1>
+
+  <input type="text" name="command" [(ngModel)]="command"/>
+  <button name="button" (click)="Clicked()">Submit</button>
+
+ <div *ngIf ="result">
+  <ul>
+    <li *ngFor ="let com of result">
+      <span>{{com.commandname}}</span>  <span>{{com.commandDescription}}</span>
+    </li>
+  </ul>
+</div>
+
+<div>
+<span>{{result1}}</span>
+</div>
